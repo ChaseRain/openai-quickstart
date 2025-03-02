@@ -1,0 +1,467 @@
+{
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<Enter>": false
+    },
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "s",
+                "h"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        // {
+        //     "before": [
+        //         "e",
+        //         "e"
+        //     ],
+        //     "after": [
+        //         "^",
+        //         "<Enter>"
+        //     ]
+        // },
+        {
+            "before": [
+                "s",
+                "l"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "["
+            ],
+            "after": [
+                "<C-b>"
+            ]
+        },
+        {
+            "before": [
+                "]"
+            ],
+            "after": [
+                "<C-f>"
+            ]
+        },
+        {
+            "before": [
+                "U"
+            ],
+            "after": [
+                "<C-r>"
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "v"
+            ],
+            "after": [
+                "v",
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "v",
+                "i",
+                "r"
+            ],
+            "commands": [
+                "editor.action.rename"
+            ]
+        },
+        // Leader 键映射
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "commands": [
+                "editor.action.formatDocument"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q"
+            ],
+            "commands": [
+                "editor.action.showHover"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "-"
+            ],
+            "commands": [
+                "editor.fold"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "="
+            ],
+            "commands": [
+                "editor.unfold"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "_"
+            ],
+            "commands": [
+                "editor.foldAll"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "+"
+            ],
+            "commands": [
+                "editor.unfoldAll"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q"
+            ],
+            "commands": [
+                "workbench.action.navigateBack"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.navigateForward"
+            ]
+        },
+        // 空格键映射
+        {
+            "before": [
+                "<space>",
+                "<space>"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "j"
+            ],
+            "commands": [
+                "workbench.action.navigateBack"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "k"
+            ],
+            "commands": [
+                "workbench.action.navigateForward"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "-"
+            ],
+            "commands": [
+                "workbench.action.splitEditorDown"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "\\"
+            ],
+            "commands": [
+                "workbench.action.splitEditorRight"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "b"
+            ],
+            "commands": [
+                "editor.debug.action.toggleBreakpoint"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "n"
+            ],
+            "commands": [
+                "workbench.action.debug.stepOver"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "e"
+            ],
+            "commands": [
+                "workbench.action.debug.continue"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "o"
+            ],
+            "commands": [
+                "workbench.action.terminal.toggleTerminal"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "p"
+            ],
+            "commands": [
+                "workbench.action.pinEditor"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "w",
+                "d"
+            ],
+            "commands": [
+                "workbench.action.closeFolder"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "w",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.terminal.toggleTerminal"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "w",
+                "v"
+            ],
+            "commands": [
+                "workbench.view.scm"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "f",
+                "w"
+            ],
+            "commands": [
+                "workbench.files.action.showActiveFileInExplorer"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "f",
+                "e"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "f",
+                "c"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "f",
+                "d"
+            ],
+            "commands": [
+                "workbench.action.closeOtherEditors"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "f",
+                "o"
+            ],
+            "commands": [
+                "workbench.action.findInFiles"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "f",
+                "f"
+            ],
+            "commands": [
+                "editor.action.formatDocument"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "g",
+                "d"
+            ],
+            "commands": [
+                "editor.action.revealDefinition"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "g",
+                "i"
+            ],
+            "commands": [
+                "editor.action.goToImplementation"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "g",
+                "s"
+            ],
+            "commands": [
+                "editor.action.goToTypeDefinition"
+            ]
+        },
+        // {
+        //     "before": [
+        //         "e"
+        //     ],
+        //     "commands": [
+        //         "workbench.action.debug.evaluate"
+        //     ]
+        // },
+        {
+            "before": [
+                "<space>",
+                "r",
+                "r"
+            ],
+            "commands": [
+                "workbench.action.debug.selectandstart"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "r",
+                "m"
+            ],
+            "commands": [
+                "workbench.action.debug.run"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "r",
+                "d"
+            ],
+            "commands": [
+                "workbench.action.debug.start"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "r",
+                "s"
+            ],
+            "commands": [
+                "workbench.action.debug.stop"
+            ]
+        },
+        // 更多映射可以根据需要添加
+        // {
+        //     "before": [
+        //         "q",
+        //         "q"
+        //     ],
+        //     "commands": [
+        //         "jupyter.execCurrentCell"
+        //     ],
+        // }
+    ],
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "remote.extensionKind": {
+        "GitHub.copilot": [
+            "ui"
+        ],
+        "github.copilot-chat": [
+            "ui"
+        ]
+    },
+    "terminal.integrated.inheritEnv": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "jupyter.askForKernelRestart": false,
+    "explorer.confirmDragAndDrop": false,
+    "notebook.lineNumbers": "on",
+    "workbench.colorTheme": "Default Light Modern"
+}
